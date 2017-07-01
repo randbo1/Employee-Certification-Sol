@@ -1,22 +1,21 @@
 namespace EmpCertDal.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class test2 : DbMigration
     {
-        public override void Up()
-        {
-            AddColumn("dbo.Certifications", "LeadDays", c => c.Int(nullable: false));
-            AddColumn("dbo.Certifications", "VenderName", c => c.String());
-            AddColumn("dbo.Certifications", "Location", c => c.String());
-        }
-        
         public override void Down()
         {
-            DropColumn("dbo.Certifications", "Location");
-            DropColumn("dbo.Certifications", "VenderName");
-            DropColumn("dbo.Certifications", "LeadDays");
+            this.DropColumn("dbo.Certifications", "Location");
+            this.DropColumn("dbo.Certifications", "VenderName");
+            this.DropColumn("dbo.Certifications", "LeadDays");
+        }
+
+        public override void Up()
+        {
+            this.AddColumn("dbo.Certifications", "LeadDays", c => c.Int(false));
+            this.AddColumn("dbo.Certifications", "VenderName", c => c.String());
+            this.AddColumn("dbo.Certifications", "Location", c => c.String());
         }
     }
 }

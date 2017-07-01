@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmpCertDal
+﻿namespace EmpCertDal
 {
-   public class EmployeeCertification
+    using System;
+
+    public class EmployeeCertification
     {
+        public DateTime CertificationDate { get; set; }
+
         /// <summary>
-        /// Gets or sets the id.
+        ///     Gets or sets the id.
         /// </summary>
         public int Id { get; set; }
-
-       public DateTime CertificationDate { get; set; }
     }
 }
