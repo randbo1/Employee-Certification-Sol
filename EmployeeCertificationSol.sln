@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpCertDal", "EmpCertDal\EmpCertDal.csproj", "{BBB78A16-6E1A-42E1-8E76-ABF1E5E005C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{FD0DC7F2-407B-46C8-844C-697DC3CE0C5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpCertDalTests", "EmpCertDalTests\EmpCertDalTests.csproj", "{3F60A31B-3F89-47F5-8E68-436E5CB16AFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,16 @@ Global
 		{BBB78A16-6E1A-42E1-8E76-ABF1E5E005C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBB78A16-6E1A-42E1-8E76-ABF1E5E005C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBB78A16-6E1A-42E1-8E76-ABF1E5E005C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F60A31B-3F89-47F5-8E68-436E5CB16AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F60A31B-3F89-47F5-8E68-436E5CB16AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F60A31B-3F89-47F5-8E68-436E5CB16AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F60A31B-3F89-47F5-8E68-436E5CB16AFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBB78A16-6E1A-42E1-8E76-ABF1E5E005C2} = {FD0DC7F2-407B-46C8-844C-697DC3CE0C5E}
+		{3F60A31B-3F89-47F5-8E68-436E5CB16AFC} = {FD0DC7F2-407B-46C8-844C-697DC3CE0C5E}
 	EndGlobalSection
 EndGlobal
