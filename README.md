@@ -22,11 +22,11 @@ Give examples
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+ToDo Item
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+ToDo Item
 
 ```
 Give an example
@@ -34,7 +34,7 @@ Give an example
 
 ### And coding style tests
 
-Explain what these tests test and why
+ToDo Item
 
 ```
 Give an example
