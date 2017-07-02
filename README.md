@@ -1,6 +1,6 @@
 # Project Title
 
-One Paragraph of project description goes here
+Employee Certification application that will provide organizations the ability to track certifications for members. It  consists of a WPF administrative application, a .Net MVC frount end. The system will be built useing a WebApi service that both the administrative and front-end will used as a data feed.
 
 ## Getting Started
 
