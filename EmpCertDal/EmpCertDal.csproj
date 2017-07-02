@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseConnect.cs" />
     <Compile Include="Certification.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeCertContext.cs" />
@@ -79,6 +80,38 @@
     <Compile Include="Migrations\201707011753286_Expire Date Cert added.cs" />
     <Compile Include="Migrations\201707011753286_Expire Date Cert added.Designer.cs">
       <DependentUpon>201707011753286_Expire Date Cert added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707021554127_Equipment to Cert.cs" />
+    <Compile Include="Migrations\201707021554127_Equipment to Cert.Designer.cs">
+      <DependentUpon>201707021554127_Equipment to Cert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707021617058_Cert Equipment fix.cs" />
+    <Compile Include="Migrations\201707021617058_Cert Equipment fix.Designer.cs">
+      <DependentUpon>201707021617058_Cert Equipment fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707021622497_equip empcert fix.cs" />
+    <Compile Include="Migrations\201707021622497_equip empcert fix.Designer.cs">
+      <DependentUpon>201707021622497_equip empcert fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707021624325_emp equip fix.cs" />
+    <Compile Include="Migrations\201707021624325_emp equip fix.Designer.cs">
+      <DependentUpon>201707021624325_emp equip fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707021629511_equipment updated.cs" />
+    <Compile Include="Migrations\201707021629511_equipment updated.Designer.cs">
+      <DependentUpon>201707021629511_equipment updated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707021709466_VS bug TimeSpan Not Supported.cs" />
+    <Compile Include="Migrations\201707021709466_VS bug TimeSpan Not Supported.Designer.cs">
+      <DependentUpon>201707021709466_VS bug TimeSpan Not Supported.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707021736002_certrenual timespan to days %28vs bug%29.cs" />
+    <Compile Include="Migrations\201707021736002_certrenual timespan to days %28vs bug%29.Designer.cs">
+      <DependentUpon>201707021736002_certrenual timespan to days %28vs bug%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707022139500_db table fields updated.cs" />
+    <Compile Include="Migrations\201707022139500_db table fields updated.Designer.cs">
+      <DependentUpon>201707022139500_db table fields updated.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +151,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707011753286_Expire Date Cert added.resx">
       <DependentUpon>201707011753286_Expire Date Cert added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707021554127_Equipment to Cert.resx">
+      <DependentUpon>201707021554127_Equipment to Cert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707021617058_Cert Equipment fix.resx">
+      <DependentUpon>201707021617058_Cert Equipment fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707021622497_equip empcert fix.resx">
+      <DependentUpon>201707021622497_equip empcert fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707021624325_emp equip fix.resx">
+      <DependentUpon>201707021624325_emp equip fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707021629511_equipment updated.resx">
+      <DependentUpon>201707021629511_equipment updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707021709466_VS bug TimeSpan Not Supported.resx">
+      <DependentUpon>201707021709466_VS bug TimeSpan Not Supported.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707021736002_certrenual timespan to days %28vs bug%29.resx">
+      <DependentUpon>201707021736002_certrenual timespan to days %28vs bug%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707022139500_db table fields updated.resx">
+      <DependentUpon>201707022139500_db table fields updated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

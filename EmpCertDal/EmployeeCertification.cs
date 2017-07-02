@@ -1,20 +1,16 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace EmpCertDal
 {
     using System;
 
-    public class EmployeeCertification
-    {
-        private EmployeeCertContext _cntx;
-        private EmployeeCertContext Cntx
-        { get {
-            if (_cntx == null)
-            {
-                    _cntx = new EmployeeCertContext();
-            }
-            return _cntx;
-        } }
+    public class EmployeeCertification:baseConnect
+    { 
+     
+
+       
+   
         public DateTime CertificationDate { get; set; }
 
         /// <summary>
@@ -26,8 +22,8 @@ namespace EmpCertDal
         {
             get
             {
-                var certTimeSpan = Cntx.Certifications.FirstOrDefault(a => a.Id == this.Id).CertRenewalTime;
-                DateTime expireDate = this.CertificationDate.Add(certTimeSpan);
+                var certTimeSpan = cntx.Certifications.FirstOrDefault(a => a.Id == this.Id).CertRenewalDays;
+                DateTime expireDate = this.CertificationDate.AddDays(certTimeSpan);
 
                 if (expireDate > DateTime.Now)
                 {

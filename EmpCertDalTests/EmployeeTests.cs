@@ -17,6 +17,7 @@ namespace EmpCertDalTests
         [TestMethod]
         public void AddEmployeeTest()
         {
+            EmployeeCertContext cntx = new EmployeeCertContext();
             EmpCertDal.Employee emp =
                 new Employee() { BirthDate = new DateTime(1950, 8, 19), FirstName = "Randy", LastName = "Edge" };
             emp.AddEmployee(emp);
@@ -28,10 +29,13 @@ namespace EmpCertDalTests
         [TestMethod]
         public void UpdateEmployee()
         {
-           EmpCertDal.Employee emp = new Employee();
-          var curEmp =  emp.GetEmployee(1);
-            curEmp.PhoneNumber = "xxxxxx";
+            EmployeeCertContext cntx = new EmployeeCertContext();
+            EmpCertDal.Employee emp = new Employee( );
+            var curEmp = emp.GetEmployee(10);
+            curEmp.PhoneNumber = "80`7500057";
             emp.UpdateEmployee(curEmp);
+           
+           
         }
     }
 }

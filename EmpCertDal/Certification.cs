@@ -4,8 +4,9 @@ namespace EmpCertDal
 {
     using System.Collections.Generic;
 
-    public class Certification
+    public class Certification:baseConnect
     {
+        #region "Public Properties"
         public ICollection<EmployeeCertification> EmployeeCerts { get; set; }
 
         public int Id { get; set; }
@@ -14,8 +15,15 @@ namespace EmpCertDal
 
         public string Location { get; set; }
 
-        public string VenderName { get; set; }
+        public string VendorName { get; set; }
 
-        public TimeSpan CertRenewalTime { get; set; }
+        public int CertRenewalDays { get; set; }
+        #endregion
+
+        public void Add(Certification newCert)
+        {
+            cntx.Certifications.Add(newCert);
+        }
+
     }
 }
