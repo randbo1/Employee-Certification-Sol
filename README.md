@@ -1,4 +1,4 @@
-# Project Title
+# Employee Certification Manager
 
 Employee Certification application that will provide organizations the ability to track certifications for members. It  consists of a WPF administrative application, a .Net MVC frount end. The system will be built useing a WebApi service that both the administrative and front-end will used as a data feed.
 
