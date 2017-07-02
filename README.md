@@ -61,6 +61,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](License.md
 ## Acknowledgments
 
 * John Packard
-* Kim Ackerblade
+* Debra McCoy
 * Kirk Graves
 
