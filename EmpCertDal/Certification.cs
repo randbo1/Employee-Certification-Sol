@@ -1,4 +1,6 @@
-﻿namespace EmpCertDal
+﻿using System;
+
+namespace EmpCertDal
 {
     using System.Collections.Generic;
 
@@ -13,5 +15,7 @@
         public string Location { get; set; }
 
         public string VenderName { get; set; }
+
+        public TimeSpan CertRenewalTime { get; set; }
     }
 }

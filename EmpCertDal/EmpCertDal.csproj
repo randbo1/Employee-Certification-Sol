@@ -76,6 +76,10 @@
     <Compile Include="Migrations\201707010125543_fixed Birthdate.Designer.cs">
       <DependentUpon>201707010125543_fixed Birthdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707011753286_Expire Date Cert added.cs" />
+    <Compile Include="Migrations\201707011753286_Expire Date Cert added.Designer.cs">
+      <DependentUpon>201707011753286_Expire Date Cert added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -111,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707010125543_fixed Birthdate.resx">
       <DependentUpon>201707010125543_fixed Birthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707011753286_Expire Date Cert added.resx">
+      <DependentUpon>201707011753286_Expire Date Cert added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

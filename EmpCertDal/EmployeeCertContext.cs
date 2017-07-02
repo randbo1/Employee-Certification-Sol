@@ -32,6 +32,8 @@
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>().Property(x => x.BirthDate).HasColumnName("Birth Date");
+            modelBuilder.Entity<Employee>().Property(x => x.BirthDate).IsOptional();
+            modelBuilder.Entity<EmployeeCertification>().Ignore(x => x.IsValid);
         }
     }
 }
