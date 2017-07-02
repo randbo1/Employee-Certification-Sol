@@ -1,6 +1,7 @@
 # Employee Certification Manager
 
-Employee Certification is a set of applications providing organizations the ability to track certifications for its members. It  consists of 
+Employee Certification is a set of applications providing organizations the ability to track certifications for its members. 
+It will consists of 
 * WPF administrative application
 * .Net MVC front end. 
 * WebApi service that both the administrative and front-end will used as a data feed.
