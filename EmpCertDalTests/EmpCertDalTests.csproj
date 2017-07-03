@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CertificateTests.cs" />
+    <Compile Include="EmployeeCertificationTest.cs" />
     <Compile Include="EmployeeTests.cs" />
     <Compile Include="EquipmentTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

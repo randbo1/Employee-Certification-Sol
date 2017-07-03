@@ -15,11 +15,13 @@ namespace EmpCertDalTests
         [TestMethod]
         public   void AddCertTest()
         {
-            Certification cert = new Certification();
-            cert.CertRenewalDays = 100;
-            cert.LeadDays = 100;
-            cert.Location = "some location";
-            cert.VendorName = "My vendor Name";
+            Certification cert = new Certification()
+            {
+                CertRenewalDays = 100,
+                LeadDays = 100,
+                Location = "some location",
+                VendorName = "My vendor Name"
+            };
             cert.Add(cert);
 
             var task = GetCertAsync(2);

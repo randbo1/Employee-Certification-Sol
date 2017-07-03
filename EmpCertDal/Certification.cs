@@ -8,7 +8,7 @@ namespace EmpCertDal
 {
     using System.Collections.Generic;
 
-    public class Certification:baseConnect
+    public class Certification:BaseConnect
     {
         #region "Public Properties"
         public ICollection<EmployeeCertification> EmployeeCerts { get; set; }

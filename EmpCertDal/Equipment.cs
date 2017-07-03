@@ -9,7 +9,7 @@ namespace EmpCertDal
     /// <summary>
     ///     The equipment.
     /// </summary>
-    public class Equipment:baseConnect
+    public class Equipment:BaseConnect
     {
 
       

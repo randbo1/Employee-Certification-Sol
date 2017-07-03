@@ -118,6 +118,10 @@
     <Compile Include="Migrations\201707030058527_base class changed.Designer.cs">
       <DependentUpon>201707030058527_base class changed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707031250545_EmployeeCertification Add Refactor.cs" />
+    <Compile Include="Migrations\201707031250545_EmployeeCertification Add Refactor.Designer.cs">
+      <DependentUpon>201707031250545_EmployeeCertification Add Refactor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -183,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707030058527_base class changed.resx">
       <DependentUpon>201707030058527_base class changed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707031250545_EmployeeCertification Add Refactor.resx">
+      <DependentUpon>201707031250545_EmployeeCertification Add Refactor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

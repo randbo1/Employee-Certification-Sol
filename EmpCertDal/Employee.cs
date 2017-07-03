@@ -10,22 +10,22 @@
     ///     The employee.
     /// </summary>
 
-    public class Employee: baseConnect
+    public  class Employee: BaseConnect
 
     {
         
 
-    public DateTime BirthDate { get; set; }
+    public virtual DateTime BirthDate { get; set; }
 
     public ICollection<EmployeeCertification> EmployeeCerts { get; set; }
 
-    public string FirstName { get; set; }
+    public virtual string FirstName { get; set; }
 
   
 
-    public string LastName { get; set; }
+    public virtual string LastName { get; set; }
 
-    public string PhoneNumber { get; set; }
+    public  virtual string PhoneNumber { get; set; }
 
 
 
