@@ -21,7 +21,7 @@
 
     public string FirstName { get; set; }
 
-    public int Id { get; set; }
+  
 
     public string LastName { get; set; }
 
@@ -37,6 +37,10 @@
     /// </param>
     public void AddEmployee(Employee newEmployee)
     {
+
+        DateTime curD = DateTime.Now;
+        newEmployee.CreatedDate = curD;
+        newEmployee.ModifiedDate = curD;
         cntx.Employees.Add(newEmployee);
         cntx.SaveChanges();
     }
@@ -74,6 +78,7 @@
     /// </param>
     public void UpdateEmployee(Employee emp)
     {
+        emp.ModifiedDate = DateTime.Now;
         cntx.Employees.AddOrUpdate(emp);
         cntx.SaveChanges();
     }
@@ -81,6 +86,7 @@
         public Employee() 
         {
         }
+
 
     }
 }

@@ -16,7 +16,7 @@ namespace EmpCertDal
         /// <summary>
         ///     Gets or sets the id.
         /// </summary>
-        public int Id { get; set; }
+      
         [MaxLength(50)]
         public string Description { get; set; }
 
@@ -37,12 +37,16 @@ namespace EmpCertDal
 
         public void AddEquipment(Equipment equip)
         {
+            DateTime now = DateTime.Now;
+            equip.CreatedDate = now;
+            equip.ModifiedDate = now;
             cntx.EquipmentList.Add(equip);
             cntx.SaveChanges();
         }
 
         public void UpdateEquipment(Equipment equip)
         {
+            equip.ModifiedDate = DateTime.Now;
             cntx.EquipmentList.AddOrUpdate(equip);
             cntx.SaveChanges();
         }

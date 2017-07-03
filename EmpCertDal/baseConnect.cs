@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace EmpCertDal
     {
         private EmployeeCertContext _cntx;
 
-        internal EmployeeCertContext cntx
+        public EmployeeCertContext cntx
         {
             get
             {
@@ -21,7 +22,19 @@ namespace EmpCertDal
                 return _cntx;
             }
         }
+        public baseConnect()
+        {
+            CreatedDate = DateTime.Now;
+            ModifiedDate = DateTime.Now;
+        }
+ 
+        [Key]
+        public int Id { get; set; }
+        [Required]
+        public DateTime CreatedDate { get; set; }
 
+        [Required]
+        public DateTime ModifiedDate { get; set; }
 
         public void Dispose()
         {

@@ -16,7 +16,7 @@ namespace EmpCertDal
         /// <summary>
         ///     Gets or sets the id.
         /// </summary>
-        public int Id { get; set; }
+   
 
         public bool IsValid
         {

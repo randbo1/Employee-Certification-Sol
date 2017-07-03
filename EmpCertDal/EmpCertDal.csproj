@@ -37,6 +37,7 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Collections" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -113,6 +114,10 @@
     <Compile Include="Migrations\201707022139500_db table fields updated.Designer.cs">
       <DependentUpon>201707022139500_db table fields updated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707030058527_base class changed.cs" />
+    <Compile Include="Migrations\201707030058527_base class changed.Designer.cs">
+      <DependentUpon>201707030058527_base class changed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -175,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707022139500_db table fields updated.resx">
       <DependentUpon>201707022139500_db table fields updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707030058527_base class changed.resx">
+      <DependentUpon>201707030058527_base class changed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
